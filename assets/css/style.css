@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.key-bold {
+    font-weight: bold;
+}
+
+.key-italic {
+    font-style: italic;
+}
+
+header {
+    display: inline;
+}
+
+.jumbotron {
+    text-align: center;
+    color: #ffffff;
+    background-color: #444444;
+    padding: 60px;
+}
+
+.description {
+    width: 60%;
+    margin: 0 auto;
+}
+
+nav {
+    text-align: center;
+    color: #ffffff;
+    padding: 5px;
+    background-color: #444444;
+    position: sticky;
+    top: 0;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+#content {
+    flex-basis: 73%;
+}
+
+
+#portofolio a {
+    text-decoration: none;
+    color: darkblue;
+}
+
+#portofolio a:hover {
+    color: aquamarine;
+}
+
+aside {
+    flex-basis: 27%;
+    background-color: #a9a9a9;
+}
+
+aside a {
+    text-decoration: none;
+    color: black;
+}
+
+aside a:hover {
+    font-weight: bolder;
+    color: #ffffff;
+}
+
+tr:hover {
+    background-color: #444444;
+    color: #ffffff;
+
+}
+
+td {
+    padding-left: 10px;
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile img {
+    width: 150px;
+    margin: 0 auto;
+}
+
+footer {
+    padding: 15px;
+    color: #ffffff;
+    background-color: #444444;
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+    main {
+        flex-direction: column;
+    }
+
+    #content, aside{
+        flex-basis: 100%;
+    }
+}
